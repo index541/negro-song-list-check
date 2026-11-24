@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
-<title>歌える曲リスト | __DISPLAY_NAME__</title>
+<title>歌える曲リスト | ネグロ（確認用）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -332,9 +332,9 @@ html { scroll-behavior: auto;}
 
 <div class="page">
 <header class="hero">
-<div class="who hero-anim"><span class="dot latin">♪</span>__DISPLAY_NAME__</div>
+<div class="who hero-anim"><span class="dot latin">♪</span>ネグロ（確認用）</div>
 <h1 class="hero-anim" style="animation-delay:.08s">歌える曲リスト<span class="h1-note">(随時更新&修正中)</span></h1>
-<p class="lead hero-anim" style="animation-delay:.16s">__DISPLAY_NAME__が歌える曲の一覧です。<br />リクエストもできます。<br />「一緒に歌いたい」はデュエットのお誘い用です。</p>
+<p class="lead hero-anim" style="animation-delay:.16s">ネグロ（確認用）が歌える曲の一覧です。<br />リクエストもできます。<br />「一緒に歌いたい」はデュエットのお誘い用です。</p>
 </header>
 
 <div class="info-band"><span>リクエスト受付中</span><span class="ib-sep">♪</span><span>全 <b id="ib-count">0</b> 曲</span><span class="ib-sep">♪</span><span>ジャンル <b id="ib-genres">0</b> 種類</span></div>
@@ -379,7 +379,7 @@ html { scroll-behavior: auto;}
 
 <footer>
 リクエストはカラオケの参考にさせてもらいます。内容によってはお応えできない場合もあります。<br />
-__DISPLAY_NAME__への連絡は X（<a class="foot-link" href="https://x.com/__X_HANDLE__" target="_blank" rel="noopener">@__X_HANDLE__</a>）からどうぞ。
+ネグロ（確認用）への連絡は X（<a class="foot-link" href="https://x.com/negro_niconico" target="_blank" rel="noopener">@negro_niconico</a>）からどうぞ。
 </footer>
 </div>
 
@@ -1391,8 +1391,8 @@ document.getElementById("clear-filters").addEventListener("click", resetFilters)
 // ===== セットアップ設定（SETUP.md の手順2・3で埋める） =====
 // FORM_URL: 自分のGoogleフォームの送信先（formResponse のURL）
 // ENTRY: フォームの各質問の entry ID（SETUP.md の変換方法を参照）
-var FORM_URL = "";
-var ENTRY = { song: "", type: "", name: "", message: "" };
+var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfhgt-6p14S0BX_amwljlDiRWM3enXMrybCfq3fn7IatVi_Ew/formResponse";
+var ENTRY = { song: "entry.694855241", type: "entry.891263553", name: "entry.632951396", message: "entry.2141563595" };
 var TYPE_LABEL = { solo: "歌ってほしい", duet: "一緒に歌いたい" };
 var ICON_CHECK = '<svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M20 6 9 17l-5-5"/></svg>';
 var ICON_SEND = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>';
@@ -1424,7 +1424,7 @@ var html =
 '<textarea id="' + idBase + '-msg" class="p-msg" placeholder="ご自由にご記入ください"' + (sending ? " disabled" : "") + "></textarea></div>";
 if (st.phase === "error") {
 html +=
-'<div class="panel-error"><p>送信できませんでした。お手数ですが、下の文をコピーして X の DM（@__X_HANDLE__）で送ってください。</p>' +
+'<div class="panel-error"><p>送信できませんでした。お手数ですが、下の文をコピーして X の DM（@negro_niconico）で送ってください。</p>' +
 '<textarea class="fallback-text" readonly aria-label="送信できなかったリクエスト文"></textarea>' +
 '<button type="button" class="btn-copy-inline">' + ICON_COPY + "<span>リクエスト文をコピーする</span></button></div>";
 }

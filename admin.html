@@ -8,7 +8,7 @@
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
 <meta name="robots" content="noindex" />
-<title>曲リスト管理 | __DISPLAY_NAME__</title>
+<title>曲リスト管理 | ネグロ（確認用）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -215,7 +215,7 @@ body.has-bulk-float #save-float { bottom:calc(104px + env(safe-area-inset-bottom
 <body>
 <div class="page">
 <header>
-<div style="font-weight:700;font-size:14px;color:var(--ink-2)">__DISPLAY_NAME__ ─ 専用ページ</div>
+<div style="font-weight:700;font-size:14px;color:var(--ink-2)">ネグロ（確認用） ─ 専用ページ</div>
 <h1>曲リスト管理</h1>
 <p class="lead">このページは堅斗専用です。曲の追加・編集・削除には、堅斗の GitHub トークンが必要です。公開ページを見るだけの人は、ここで何も変更できません。</p>
 </header>
@@ -228,7 +228,7 @@ body.has-bulk-float #save-float { bottom:calc(104px + env(safe-area-inset-bottom
 <div class="qr-card">
 <p class="qr-title">公開リストのQRコード</p>
 <div id="qr-box"></div>
-<p class="qr-url">https://__GITHUB_OWNER__.github.io/__GITHUB_REPO__/</p>
+<p class="qr-url">https://index541.github.io/negro-song-list-check/</p>
 <button type="button" class="btn sub" id="qr-close">閉じる</button>
 </div>
 </div>
@@ -757,7 +757,7 @@ body.has-bulk-float #save-float { bottom:calc(104px + env(safe-area-inset-bottom
 </div>
 <script>
 // ===== セットアップ設定（SETUP.md の手順1・3で埋める） =====
-var OWNER = "__GITHUB_OWNER__", REPO = "__GITHUB_REPO__", FILEPATH = "songs.json";
+var OWNER = "index541", REPO = "negro-song-list-check", FILEPATH = "songs.json";
 var token = "";
 try { token = localStorage.getItem("nsl.token") || ""; } catch (e) {}
 var songs = [];
@@ -3388,7 +3388,7 @@ return fetch("https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/r
 }
 // ===== スマホ通知（Web Push） =====
 // VAPID公開鍵は、セットアップ時にAIアシスタントが生成して差し替える（SETUP.md フェーズ5）
-var VAPID_PUBLIC_KEY = "__VAPID_PUBLIC_KEY__";
+var VAPID_PUBLIC_KEY = "BFiKJMStlMjoHsy-kaoQYUeTs2tqTWuAbOU8UzXSGv2WbIJQumAPPGPt_GFd23CEQ6g_RgfZAkYqIE99TFACqts";
 function vapidKeyToBytes(b64) {
 var pad = "=".repeat((4 - (b64.length % 4)) % 4);
 var base = (b64 + pad).replace(/-/g, "+").replace(/_/g, "/");
@@ -3442,7 +3442,7 @@ document.getElementById("qr-show").addEventListener("click", function () {
 if (!box.innerHTML) {
 if (typeof qrcode === "function") {
 var qr = qrcode(0, "M");
-qr.addData("https://__GITHUB_OWNER__.github.io/__GITHUB_REPO__/");
+qr.addData("https://index541.github.io/negro-song-list-check/");
 qr.make();
 box.innerHTML = qr.createSvgTag({ cellSize: 6, margin: 12, scalable: true });
 } else {
