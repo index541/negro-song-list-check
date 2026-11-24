@@ -1,0 +1,30 @@
+[
+  {
+    "id": "sample1",
+    "title": "サンプル曲1（消してください）",
+    "artist": "サンプルアーティスト",
+    "titleYomi": "さんぷるきょくいち",
+    "artistYomi": "さんぷるあーてぃすと",
+    "genres": ["J-POP"],
+    "keyLabel": "原曲キー",
+    "keyShift": 0,
+    "memory": 5,
+    "addedAt": "2026-01-01"
+  },
+  {
+    "id": "sample2",
+    "title": "サンプル曲2（消してください）",
+    "artist": "サンプルアーティスト feat.誰か",
+    "titleYomi": "さんぷるきょくに",
+    "artistYomi": "さんぷるあーてぃすとだれか",
+    "genres": ["アニソン", "ボカロ"],
+    "work": "サンプル作品名",
+    "workYomi": "さんぷるさくひんめい",
+    "keyLabel": "原曲 +2",
+    "keyShift": 2,
+    "memory": 3,
+    "jacket": "",
+    "preview": "",
+    "addedAt": "2026-01-01"
+  }
+]
